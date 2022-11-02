@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Pacifico&family=Titan+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fff5e4;
+}
+
+input[type = "checkbox"]{
+    top: -300px;
+    right: -200px;
+    position: relative;
+    width: 40px;
+    height: 20px;
+    appearance: none;
+    background-color: #434343;
+    outline: none;
+    border-radius: 10px;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+input[type = "checkbox"]:checked{
+    background-color: #3664ff;
+}
+
+input[type = "checkbox"]:before{
+    content : " ";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #fcfcfc;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: .5s ease;
+}
+
+input[type = "checkbox"]:checked::before{
+    transform: translateX(20px);
+}
+
+.dark{
+    background-color: #333333;
+    color: #fcfcfc;
+}
+
+.links{
+    transition: all .3s ease;
+    text-decoration: none;
+    color:#ffff;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    max-width: 850px;
+    border-style: none;
+    background-color: #ffff;
+    border-radius: 15px;
+    box-shadow:2px 2px 18px rgba(0,0,0,0.3);
+}
+
+.login {
+    width: 100%;
+}
+
+form {
+    width: 250px;
+    margin: 60px auto;
+}
+
+h1 {
+    margin: 20px;
+    text-align: center;
+    font-family : "Titan One", cursive;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+hr {
+    font-family: 'Releway', sans-serif;
+    border-top: 2px solid #ff9494;
+}
+
+p {
+    font-family: 'Releway', sans-serif;
+    text-align: center;
+    margin: 10px;
+    color: #333333;
+}
+
+form label {
+    font-family: calibri;
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px;
+    color: #333333;
+}
+
+input {
+    width: 100%;
+    margin: 2px;
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+button {
+    text-decoration: none;
+    font-family: 'Releway', sans-serif;
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 252px;
+    color: #ffff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: #333333;
+}
+
+.links{
+    transition: all .3s ease;
+    text-decoration: none;
+    color:#ffff;
+}
+
+button:hover {
+    text-decoration: none;
+    background: #ff9494;
+}
